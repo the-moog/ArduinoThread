@@ -49,7 +49,7 @@
 	=============== WHAT YO LEARN WITH THIS =================
 	1) Threads are actually running in 'parallel'.
 	   
-	   Since each thread process time is very tiny, they appear
+	   Synce each thread process time is very tiny, they appear
 	   as being runned in parallel.
 
 	   Because of that, clicking multiple buttons at any time,
@@ -113,7 +113,7 @@ public:
 		"Old" default Thread method 'shouldRun' return if
 		it should run.
 	*/
-	bool shouldRun(unsigned long time){
+	bool shouldRun(long time){
 		// Override enabled on thread when pin goes LOW.
 		if(digitalRead(pin) == LOW){
 			enabled = true;
